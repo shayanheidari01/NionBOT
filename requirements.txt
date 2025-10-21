@@ -1,0 +1,4 @@
+rubpy
+python-dotenv
+SQLAlchemy
+aiosqlite
