@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ربات مدیریت گروه نیون برای روبیکا - ضد تبلیغ هوشمند، ضد اسپم، هوش مصنوعی و ابزارهای کاربردی. دانلود و نصب رایگان ربات نیون">
+    <meta name="keywords" content="ربات مدیریت گروه روبیکا, ربات روبیکا, ربات نیون, ربات مدیریت گروه رایگان روبیکا, نیون بات, Nion Bot">
+    <meta name="author" content="Nion Bot">
+    <meta property="og:title" content="ربات نیون - مدیریت هوشمند گروه‌های روبیکا">
+    <meta property="og:description" content="قدرتمندترین ربات مدیریت گروه روبیکا با هوش مصنوعی، ضد تبلیغ و امکانات حرفه‌ای">
+    <meta property="og:type" content="website">
+    <title>ربات نیون | مدیریت هوشمند گروه‌های روبیکا - رایگان</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .cta-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .cta-header:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(102, 126, 234, 0.6);
+        }
+        
+        .hero {
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary, .btn-secondary {
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: white;
+            color: #667eea;
+            box-shadow: 0 8px 30px rgba(255,255,255,0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(255,255,255,0.4);
+        }
+        
+        .btn-secondary {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: #667eea;
+        }
+        
+        .features {
+            background: white;
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 60px;
+            color: #2d3748;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background: linear-gradient(135deg, #f6f8fb 0%, #ffffff 100%);
+            padding: 35px;
+            border-radius: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.2);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: #667eea;
+            font-weight: 600;
+        }
+        
+        .feature-card p {
+            color: #718096;
+            font-size: 1rem;
+        }
+        
+        .install-guide {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 80px 0;
+            color: white;
+        }
+        
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .step {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 35px;
+            border-radius: 20px;
+            text-align: center;
+            border: 2px solid rgba(255,255,255,0.2);
+            transition: all 0.3s;
+        }
+        
+        .step:hover {
+            background: rgba(255,255,255,0.2);
+            transform: scale(1.05);
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: white;
+            color: #667eea;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 0 auto 20px;
+        }
+        
+        .step h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+        
+        .tools {
+            background: #f7fafc;
+            padding: 80px 0;
+        }
+        
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 50px;
+        }
+        
+        .tool-item {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+        }
+        
+        .tool-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+        
+        .tool-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 80px 0;
+            text-align: center;
+            color: white;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+        
+        footer {
+            background: #2d3748;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        footer p {
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">🤖 ربات نیون</div>
+                <a href="https://rubika.ir/nionbot" class="cta-header" target="_blank">نصب رایگان ربات</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>مدیریت هوشمند گروه‌های روبیکا</h1>
+            <p>قدرتمندترین ربات مدیریت گروه با هوش مصنوعی، ضد تبلیغ و امکانات حرفه‌ای</p>
+            <div class="hero-buttons">
+                <a href="https://rubika.ir/nionbot" class="btn-primary" target="_blank">شروع رایگان</a>
+                <a href="#install" class="btn-secondary">آموزش نصب</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">امکانات ربات نیون</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>ضد تبلیغ هوشمند</h3>
+                    <p>شناسایی و حذف خودکار تبلیغات با سیستم هوش مصنوعی پیشرفته</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>ضد اسپم و فلود</h3>
+                    <p>جلوگیری از ارسال پیام‌های تکراری و اسپم در گروه</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>هوش مصنوعی</h3>
+                    <p>پاسخگویی هوشمند و چت با کاربران به صورت خودکار</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🖼️</div>
+                    <h3>فیلتر تصاویر</h3>
+                    <p>شناسایی و حذف تصاویر نامناسب با تکنولوژی یادگیری عمیق</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>جلوگیری از تعلیق</h3>
+                    <p>حفاظت از گروه شما در برابر گزارش‌دهی و تعلیق در روبیکا</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>آمار و گزارش</h3>
+                    <p>نمایش آمار فعالیت کاربران و وضعیت دقیق گروه</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="install-guide" id="install">
+        <div class="container">
+            <h2 class="section-title">آموزش نصب ربات در ۳ مرحله ساده</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">۱</div>
+                    <h3>افزودن به گروه</h3>
+                    <p>ربات نیون را از طریق لینک rubika.ir/nionbot به گروه خود اضافه کنید</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">۲</div>
+                    <h3>ادمین کردن ربات</h3>
+                    <p>ربات را با تمام دسترسی‌ها به عنوان ادمین گروه تنظیم نمایید</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">۳</div>
+                    <h3>فعال‌سازی</h3>
+                    <p>دستور نصب را در گروه ارسال کنید و از امکانات ربات لذت ببرید</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tools">
+        <div class="container">
+            <h2 class="section-title">ابزارهای سرگرمی و کاربردی</h2>
+            <div class="tools-grid">
+                <div class="tool-item">
+                    <div class="tool-icon">💰</div>
+                    <p>نرخ ارز و طلا</p>
+                </div>
+                
+                <div class="tool-item">
+                    <div class="tool-icon">🔮</div>
+                    <p>فال و طالع‌بینی</p>
+                </div>
+                
+                <div class="tool-item">
+                    <div class="tool-icon">😄</div>
+                    <p>جوک و سرگرمی</p>
+                </div>
+                
+                <div class="tool-item">
+                    <div class="tool-icon">💪</div>
+                    <p>متن انگیزشی</p>
+                </div>
+                
+                <div class="tool-item">
+                    <div class="tool-icon">📊</div>
+                    <p>نظرسنجی</p>
+                </div>
+                
+                <div class="tool-item">
+                    <div class="tool-icon">🎯</div>
+                    <p>چالش و بازی</p>
+                </div>
+                
+                <div class="tool-item">
+                    <div class="tool-icon">💬</div>
+                    <p>چت با هوش مصنوعی</p>
+                </div>
+                
+                <div class="tool-item">
+                    <div class="tool-icon">⚙️</div>
+                    <p>مدیریت اتوماتیک</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>همین حالا شروع کنید</h2>
+            <p>ربات نیون را به صورت کاملاً رایگان در گروه خود نصب کنید</p>
+            <a href="https://rubika.ir/nionbot" class="btn-primary" target="_blank">نصب رایگان ربات نیون</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; ۲۰۲۵ ربات نیون | ربات مدیریت گروه روبیکا | تمامی حقوق محفوظ است</p>
+            <p style="margin-top: 10px;">ربات نیون - بهترین ربات مدیریت گروه رایگان برای روبیکا</p>
+        </div>
+    </footer>
+</body>
+</html>
